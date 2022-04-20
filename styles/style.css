@@ -1,0 +1,289 @@
+#form-login {
+  /* display: none; */
+}
+
+#page-todos {
+  display: none;
+}
+
+#form-signup {
+  display: none;
+}
+
+/* #page-todos, #form-signup {
+  display: none;
+} */
+
+
+* {
+  box-sizing: border-box;
+  /* outline: 1px solid #f73; */
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+:root {
+  --primary-color: #FFD370;
+  --white-color: #fff;
+  --black-color: #333;
+  --gray-color: #9F9A91;
+}
+
+body {
+  font-family: 'Noto Sans TC', 'Roboto', sans-serif;
+  color: var(--black-color);
+  background-color: var(--primary-color);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1028px;
+  /* max-width: 375px; */
+  min-width: 320px;
+  min-height: 100vh;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* #TODO */
+  justify-content: space-between;
+
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.home {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .4rem 0;
+
+  height: 71px;
+}
+
+.home-header {
+  justify-content: flex-end;
+  padding: 0;
+  /* padding-top: 1rem; */
+  /* padding: 1rem 0; */
+
+}
+
+.motto {
+  padding: 1.25rem 0;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 71px);
+
+  display: flex;
+  flex-direction: column;
+  /* #TODO: gap */
+  /* justify-content: space-around; */
+}
+
+
+
+.relative {
+  position: relative;
+
+}
+
+.m0-auto {
+  margin: 0 auto;
+}
+
+.p0 {
+  padding: 0;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+
+.form {
+  height: 100%;
+  padding-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+
+  padding: 0.6rem 2.4rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  font-size: 1rem;
+
+  color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  background: #333;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  transition: 0.1s;
+}
+
+a h4 {
+  padding-top: 1.5rem;
+}
+
+a h4:hover {
+  transform: scale(1.025);
+  cursor: pointer;
+}
+
+a.btn {
+  border-color: transparent;
+  transition: 0.1s;
+  text-decoration: none;
+}
+
+a.btn:hover {
+  transform: scale(1.075);
+}
+
+a.btn:active {
+  transform: scale(1.025);
+  box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.input-area {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 3rem;
+  /* height: 9%; */
+  /* #TODO: gap */
+  margin-bottom: 1rem;
+  padding: 0.25rem;
+
+  border: 0;
+  border-radius: .625rem;
+  background-color: var(--white-color);
+}
+
+.label-p {
+  padding: .25rem;
+}
+
+.hint-msg {
+  margin-top: -1rem;
+  padding-bottom: 1rem;
+}
+
+
+.input-todo {
+  width: 100%;
+  padding: .75rem;
+  border: 0;
+  border-radius: .625rem;
+  /* background-color: #f73; */
+}
+
+.btn-addTodo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12.5%;
+  /* height: 100%; */
+  /* border: 10px; */
+  /* border-color: #000; */
+  text-decoration: none;
+  border-radius: .625rem;
+  color: var(--white-color);
+  background-color: var(--black-color);
+}
+
+
+
+
+.card-todos {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 83.25%;
+
+  padding: .4rem 0;
+  margin: 0 auto;
+  border-radius: .625rem;
+  background-color: var(--white-color);
+}
+
+
+
+.card-tabs {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+
+.card-body {
+  position: absolute;
+  width: 100%;
+  /* #TODO: pages height */
+  min-height: 85.5%;
+
+  top: 51px;
+  bottom: 69px;
+  padding: 0 1rem;
+}
+
+.card-body li {
+  padding: 1rem 0;
+  line-height: 1.25rem;
+}
+
+li .item-todo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-txt {
+  display: flex;
+}
+
+.todo-txt p {
+  padding-left: 1rem;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
