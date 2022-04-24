@@ -1,15 +1,10 @@
-import '../controllers/registerController.js';
-import '../controllers/loginController.js';
-import '../controllers/pagesController.js';
-import '../controllers/todoCreateController.js';
-// import { getTodos } from '../controllers/todoReadController.js';
-import { checkLocalStorage } from '../controllers/authController.js';
+import './controllers/usersController.js';
 
-// const emailChecker = (email) => {
-//   return email && email.includes('@');
-// };
-
-// Main
-// checkToken();
-checkLocalStorage();
-// localStorage.clear();
+import './views/view.js';
+import './views/toggleView.js';
+// import './helpers/authHelper.js';
+// import './helpers/storeHelper.js';
+/**
+ * #XXX: order of files matter?
+ */
+console.log('This is [main.js].');
